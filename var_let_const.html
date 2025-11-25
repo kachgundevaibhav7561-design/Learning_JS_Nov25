@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fname="vaibhav";// the var variable are use to reassign
+        var fnmae="kachgunde";
+        fname="pune"      // the var variable are use to redeclare
+        document.write(fname);
+
+        let lname="i love pune";
+        // the let variable reassign is not allowed
+
+        lname="Maharashtra";
+        document.write(lname); 
+        //the let variable are redeclare are allowed
+
+        const cname="TCS";
+        // the const variable reassign is not allowed
+        cname="Pune";
+        document.write(cname);
+        // redecalre is not allowed in variable
+
+
+    </script>
+
+    <script>
+        function example(){
+            var x=1;
+            let y=2;
+            const z=3;
+
+            
+            if(true){
+                var x=10;
+                let y=20;
+                const z=30;
+                document.write("x :"+ x + "<br>");
+                document.write("y :"+ y+ "<br>");
+                document.write("z :"+ z + "<br><br>");//10 20 30
+            }
+
+            document.write("x :" +x+ "<br>");
+            document.write("y :" +y+ "<br>");
+            document.write("z :" +z+ "<br><br>");// 10 2 3
+
+        }
+        example();
+    </script>
+</body>
+</html>
