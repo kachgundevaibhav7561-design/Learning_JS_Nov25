@@ -46,12 +46,12 @@
         a.push("kirti");
         a.push("kedar");
         document.write(a + "<br>");
-    
+
 
 
     </script>
     <script>
-         document.write("<h2>shift and unshift</h2>")
+        document.write("<h2>shift and unshift</h2>")
         var a = ["tanuja", "Harshaa", "kachan", "rohit", "anish", "vaibhav", "eka"];
         document.write(a + "<br>");
         a.shift();
@@ -60,24 +60,39 @@
         a.unshift("apurva");
         a.unshift("neha");
         document.write(a + "<br>");
-        
+
 
     </script>
     <script>
-         document.write("<h2>contact and join</h2>")
+        document.write("<h2>contact and join</h2>")
         var a = ["tanuja", "Harshaa", "kachan", "rohit", "anish", "vaibhav", "eka"];
         var b = ["neha", "radha", "puja", "ajay", "anish"];
-        var x= ["nama","riya","vithal"];
+        var x = ["nama", "riya", "vithal"];
         document.write(a + "<br>");
-        
 
-         var c=a.concat(b,x);
-         document.write(c+ "<br>");
-         var d= c.join("/")
-         document.write(d+"<br>");
+
+        var c = a.concat(b, x);
+        document.write(c + "<br>");
+        var d = c.join("/")
+        document.write(d + "<br>");
 
     </script>
+    <script>
+        document.write("<h2>slice example</h2>")
+        var a = ["tanuja", "Harshaa", "kachan", "rohit", "anish", "vaibhav", "eka"];
+        document.write(a + "<br>")
+        // slice (start value to,end value)
+        var b = a.slice(-4, -1)
+        document.write(b + "<br>")
 
+        document.write("<h2>splice example</h2>")
+        var a = ["tanuja", "Harshaa", "kachan", "rohit", "anish", "vaibhav", "eka"];
+        document.write(a + "<br>")
+        //splice(index,how many delete, "new value")
+        a.splice(2,3,"arbaj","anand","ganesh");
+        document.write(a + "<br>")
+
+    </script>
 </body>
 
 </html>

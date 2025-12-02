@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a={
+            fname:"vaibhav",
+            lname:"kachgunde",
+            age:21,
+            email: "vaibhavkachgunde2@gmail.com",
+            players:['yuvraj','virat','dhoni','sachin'],//array in object
+            address:{
+                'city':'pune',
+                'country':'India'
+            },
+            phone:7878458212,
+            message:"Today i am going to mumbai"
+        }
+        document.write("This is :"+ a.fname+ "<br>") ;
+        document.write("my surname :"+ a.lname+ "<br>") ;
+        document.write("my age is : "+ a.age + "<br>") ;
+        document.write("This is my email- "+ a.email+"<br>") ;
+
+        document.write("My fav player "+ a.players[2]+"<br>") ;
+        document.write("My address "+ a.address.city+"<br>") ;
+    </script>
+    <script>
+        var x={
+            emp_id:101,
+            emp_name:'vijay',
+            emp_lastname:'mane',
+            emp_dpet:'computer',
+            email:'vijay12@gmail.com',
+
+            address:{
+                'city':'kolhapur',
+                'country':'india'
+
+
+            },
+            phone: 987598796,
+            message: "Hello"
+
+
+        }
+        document.write("emp id ="+x.emp_id+"<br>")
+        document.write("emp name ="+x.emp_name+"<br>")
+        document.write("emp surname ="+x.emp_lastname+"<br>")
+        document.write("emp dept ="+x.emp_dpet+"<br>")
+        document.write("emp email ="+x.email+"<br>")
+        document.write("emp phone ="+x.phone+"<br>")
+        document.write("emp meaaage ="+x.message+"<br>")
+
+        document.write("emp dept ="+x.address.city+"<br>")
+    </script>
+</body>
+</html>
