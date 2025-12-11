@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- example1 -->
+    <h1>change text using DOM</h1>
+    <h2 id="title">Old Heading</h2>
+    <button onclick="changetext()">change-text</button>
+    <hr>
+
+    <!-- example2 -->
+    <h1>change style using DOM</h1>
+    <h2 id="msg">Hello it's Neha</h2>
+    <button onclick="changecolor()">change-color</button>
+    <hr>
+
+    <!-- example3 -->
+    <h1>change images using DOM</h1>
+    <img src="images/coan.webp" id="myimg" width="300" />
+    <button onclick="changemImage()">change-image</button>
+    <hr>
+
+    <!-- example4 -->
+    <h1>Input from User</h1>
+    <input type="text" id="nameInput" placeholder="Enter name" />
+    <button onclick="showname()">Submit</button>
+    <h3 style="color: red;" id="output"></h3>
+    <hr>
+
+    <!-- example5 -->
+    <h1>delete line</h1>
+    <p id="deleteMe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quos ut similique delectus magnam,
+        doloremque vel quia maiores laboriosam excepturi incidunt ex perspiciatis, eum ea. Unde quam veniam consequuntur
+        reprehenderit!</p>
+    <button onclick="removepara()">Remove</button>
+    <hr>
+<!-- example6 -->
+
+    <p id="para1">change my fonr size</p>
+    <button onclick="increase()">+</button>
+    <button onclick="decrease()">-</button>
+    <hr>
+ <!-- example 7 -->
+  <button onclick="toggleTheme()">Toggle theme</button>
+
+  <h2>Welcome to my website</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non voluptatum fugit, at tempore nam nulla saepe quae exercitationem illo labore laborum libero enim veritatis, ad in ut explicabo nesciunt?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptate quas facere eveniet repellat? Quod facere amet temporibus aspernatur aperiam. Placeat enim voluptas ab esse saepe, repellat sequi quaerat nulla?</p>bo
+  <style>
+    body{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+    }
+    .dark-mode{
+        background-color: black;
+        color: white;
+    }
+
+  </style>
+  <script>
+    function toggleTheme(){
+        document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+
+    <script>//example6
+        let size = 16;
+        function increase() {
+            size++;
+            document.getElementById('para1').style.fontSize = size + 'px';
+        }
+
+        function decrease() {
+            size--;
+            document.getElementById('para1').style.fontSize = size + 'px';
+
+        }
+    </script>
+
+    <script>//example5
+        function removepara() {
+            document.getElementById('deleteMe').remove();
+        }
+    </script>
+    <script>//example4
+        function showname() {
+            let name = document.getElementById('nameInput').value;
+            document.getElementById('output').innerHTML = "Hello is me" + name;
+        }
+    </script>
+
+    <script>//example 3
+        function changemImage() {
+            document.getElementById('myimg').src = 'images/dark.jpg';
+        }
+    </script>
+
+    <script>// example 2--
+        function changecolor() {
+            document.getElementById('msg').style.color = 'blue';
+        }
+    </script>
+    <script>// example 1--
+        function changetext() {
+            document.getElementById('title').innerHTML = 'New Heading';
+        }
+    </script>
+</body>
+
+</html>
